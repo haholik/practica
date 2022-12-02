@@ -15,7 +15,7 @@ trunk_template = [
 
 if work == "access":
     print(access_template)
-elif work == "tunk":
+elif work == "trunk":
     print(trunk_template)
 else:
     print("ERROR")
