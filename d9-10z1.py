@@ -1,6 +1,6 @@
 lizt = []
 while True:
-    inp = input("Введите MAC аддрес в формате: XXX:XXX:XXX:XXX: ")
+    inp = input("Введите MAC аддрес в формате: XXXX:XXXX:XXXX:XXXX: ")
     lizt.append(inp.replace(":","."))
     if inp != "exit":
         print(lizt)
