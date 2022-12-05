@@ -6,3 +6,4 @@ for line in file_sw:
         print(line, end="")
     else:
         continue
+file_sw.close()
