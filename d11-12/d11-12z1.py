@@ -1,4 +1,4 @@
-file_sw = open("ospf.txt", mode="r+", encoding="utf-8")
+file_sw = open("../ospf.txt", mode="r+", encoding="utf-8")
 
 suff = ["Prefix", "AD/Metric", "Next-Hop", "Last update", "Outbound", "Interface"]
 lizt = file_sw.readline().split()

@@ -5,7 +5,7 @@ z=int(0)
 x=int(256)
 
 for i in lizt_ip:
-    if len(lizt_ip) == 4 and re.split(ip, "."):
+    if len(lizt_ip) == 4 and re.split(ip, ".."):
         if int(lizt_ip[0]) in range(1, 223):
             print("unicast")
             break

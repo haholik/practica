@@ -10,7 +10,7 @@ for i in lizt_ip:
         print(i)
         print("Неправильный IP-адрес")
         break
-    elif len(lizt_ip) == 4 and re.split(ip, "."):
+    elif len(lizt_ip) == 4 and re.split(ip, ".."):
         if int(lizt_ip[0]) in range(1, 223):
             print("unicast")
             break

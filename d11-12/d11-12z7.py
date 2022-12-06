@@ -1,6 +1,6 @@
 from tabulate import tabulate
 
-file = open("CAM_table.txt", mode="r+", encoding="utf-8")
+file = open("../CAM_table.txt", mode="r+", encoding="utf-8")
 lizt = []
 keyer = {}
 tabs = []

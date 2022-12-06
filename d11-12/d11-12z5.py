@@ -1,7 +1,7 @@
 from tabulate import tabulate
 
 keyer = {}
-file = open("CAM_table.txt", mode="r+", encoding="utf-8")
+file = open("../CAM_table.txt", mode="r+", encoding="utf-8")
 for i, line in enumerate(file):
     if "DYNAMIC" in line:
         keyer[i] = str(line).split()
