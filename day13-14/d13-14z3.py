@@ -8,15 +8,17 @@ trunk_config = {
 "FastEthernet0/4": [17]
 }
 
+keyer = {}
 
 def generate_trunk_config(intf_vlan_mapping, trunk_template):
     for line in intf_vlan_mapping:
-        print(line)
         for line2 in trunk_template:
+            keyer[line] = trunk_template
             if "switchport trunk allowed vlan" in line2:
-                print(trunk_template[-1], intf_vlan_mapping.get(line))
-            else:
-                print(line2)
+                keyer[line][-1] = "switchport trunk allowed vlan", line2
+
+
+
 
 
 generate_trunk_config(trunk_config, trunk_mode_template)
