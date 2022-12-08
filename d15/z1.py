@@ -6,8 +6,8 @@ def parse_cdp_neighbors(show):
         for line in show:
             main = []
             second = []
-            if line.find('>') != -1:
-                main_machine = line[:line.find('>')]
+            if line.find('SW') != -1:
+                main_machine = "SW"
             elif line.find('Eth') != -1:
                 second_machine, main_eth, main_inter, *other, second_eth, second_inter = line.split()
                 main.append(main_machine)
